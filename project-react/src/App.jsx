@@ -6,6 +6,7 @@ import TVList from "./pages/TVList";
 import TVDetails from "./pages/TVDetails";
 import Wishlist from "./pages/Wishlist";
 import NotFound from "./pages/NotFound";
+import Search from "./pages/Search";
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
         <Route element={<HeaderLayOut />}>
           <Route path="/" element={<MoviesList />} />
           <Route path="/movie/:id" element={<MovieDetails />} />
-          <Route path="/TV" element={<TVList />} />
-          <Route path="/TV/:id" element={<TVDetails />} />
+          <Route path="/tv" element={<TVList />} />
+          <Route path="/tv/:id" element={<TVDetails />} />
           <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/search" element={<Search />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

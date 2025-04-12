@@ -16,23 +16,39 @@ api.interceptors.request.use((config) => {
 });
 
 // Movies
-export const getMovies = (page = 1) =>
+const getMovies = (page = 1) =>
   api.get("/movie/now_playing", { params: { page } });
-export const getMovieDetails = (id) => api.get(`/movie/${id}`);
-export const getMovieRecommendations = (id) =>
-  api.get(`/movie/${id}/recommendations`);
-export const getMovieReviews = (id) => api.get(`/movie/${id}/reviews`);
-export const searchMovies = (query) =>
-  api.get("/search/movie", { params: { query } });
+
+const getMovieDetails = (id) => api.get(`/movie/${id}`);
+
+const getMovieRecommendations = (id) => api.get(`/movie/${id}/recommendations`);
+
+const getMovieReviews = (id) => api.get(`/movie/${id}/reviews`);
+
+const searchMovies = (query) => api.get("/search/movie", { params: { query } });
 
 // TV
-export const getTVShows = (page = 1) =>
-  api.get("/tv/popular", { params: { page } });
-export const getTVDetails = (id) => api.get(`/tv/${id}`);
-export const getTVRecommendations = (id) =>
-  api.get(`/tv/${id}/recommendations`);
-export const getTVReviews = (id) => api.get(`/tv/${id}/reviews`);
-export const searchTVShows = (query) =>
-  api.get("/search/tv", { params: { query } });
+const getTVShows = (page = 1) => api.get("/tv/popular", { params: { page } });
 
+const getTVDetails = (id) => api.get(`/tv/${id}`);
+
+const getTVRecommendations = (id) => api.get(`/tv/${id}/recommendations`);
+
+const getTVReviews = (id) => api.get(`/tv/${id}/reviews`);
+
+const searchTVShows = (query) => api.get("/search/tv", { params: { query } });
+
+export {
+  getMovies,
+  getMovieDetails,
+  getMovieRecommendations,
+  getMovieReviews,
+  searchMovies,
+  // tv
+  getTVShows,
+  getTVDetails,
+  getTVRecommendations,
+  getTVReviews,
+  searchTVShows,
+};
 export default api;
