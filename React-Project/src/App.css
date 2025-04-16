@@ -1,0 +1,106 @@
+
+body {
+  background-color: #fdf6f0; 
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+  font-size: 45px;
+  color: #e66b6b; 
+}
+
+.heading-color {
+  color: #ff8c42; 
+}
+
+.input-field {
+  height: 60px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #333;
+  padding-left: 15px;
+  border-radius: 8px;
+  border: 2px solid #ffd8a8;
+  transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: #aaa;
+}
+
+.input-field:focus {
+  border-color: #ff8c42;
+  box-shadow: 0 0 0 4px rgba(255, 140, 66, 0.2);
+}
+
+.search-button {
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #e66b6b; 
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #ff8c8c;
+  cursor: pointer;
+}
+
+.search-button:active {
+  transform: scale(0.96);
+}
+
+.custom-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ffe0cc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 140, 66, 0.1);
+}
+
+.card-img-top {
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.card-link:hover .card-img-top {
+  transform: scale(1.03);
+}
+
+.card-title {
+  font-size: 18px;
+  color: #ff8c42;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.heart-button {
+  color: #ff5e78;
+  background-color: transparent;
+  border: 1px solid #ff5e78;
+  border-radius: 50%;
+  font-size: 22px;
+  padding: 6px;
+  transition: 0.3s ease;
+}
+
+.heart-button:hover {
+  background-color: #ff5e78;
+  color: #fff;
+  cursor: pointer;
+}
+
+.heart-button:active {
+  transform: scale(1.15);
+}
+
