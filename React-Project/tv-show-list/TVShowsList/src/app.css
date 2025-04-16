@@ -1,0 +1,153 @@
+body {
+    background-color: #fdf6f0; 
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+h2{
+  color: #e66b6b;
+}
+  
+  button {
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #e66b6b; 
+    color: white;
+    border: none;
+    transition: 0.3s ease;
+  }
+
+  
+  .card-img-top {
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.3s ease;
+  }
+  
+  .card-link:hover .card-img-top {
+    transform: scale(1.03);
+  }
+  
+  .card-title {
+    font-size: 18px;
+    color: #ff8c42;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    color: #ff5e78;
+    background-color: transparent;
+    border: 1px solid #ff5e78;
+    border-radius: 50%;
+    font-size: 22px;
+    padding: 6px;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff5e78;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:active {
+    transform: scale(1.15);
+  }
+
+.card {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+  }
+  
+
+  .card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+
+.search-input {
+  transition: all 0.3s ease;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  width: 30%;
+  box-shadow: none;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #ffc107;
+  box-shadow: 0 0 8px rgba(255, 193, 7, 0.5);
+  transform: scale(1.02);
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.search-box-wrapper {
+  animation: fadeSlideIn 0.5s ease-in-out;
+}
+
+  
+.search-input {
+    transition: all 0.3s ease;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: none;
+  }
+  
+  .search-input:hover {
+    outline: none;
+    border-color: #ffc107;
+    box-shadow: 0 0 8px rgba(255, 193, 7, 0.5);
+    transform: scale(1.02);
+  }
+  
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .search-box-wrapper {
+    animation: fadeSlideIn 0.5s ease-in-out;
+  }
+
+   .favorite-btn {
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    color: #555; 
+    background-color: #fff;
+    border: none;
+  }
+  
+  .favorite-btn:hover {
+    transform: scale(1.2);
+    background-color: #ffe6ec; 
+  }
+  
+  .favorite-btn.favorite {
+    color: #e63946; 
+    background-color: #fff0f3; 
+     
+  }
+  
